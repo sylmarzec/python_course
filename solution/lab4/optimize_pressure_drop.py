@@ -13,7 +13,8 @@ def read_last_data(fileName):
 # f = "/home/wgryglas/simflow/python_course/python_course/postProcessing/outletTotalPressure/0/faceSource.dat"
 # print read_last_data(f)
 
-of.PARAVIEW ="/home/wgryglas/Applications/ParaView-4.3.1-Linux-64bit/bin/paraview"#"/opt/ParaView-4.3.1-Linux-64bit/bin/paraview"
+of.PARAVIEW ="/home/wgryglas/Applications/ParaView-5.0.1-Qt4-OpenGL2-MPI-Linux-64bit/bin/paraview"
+    #"/home/wgryglas/Applications/ParaView-4.3.1-Linux-64bit/bin/paraview"#"/opt/ParaView-4.3.1-Linux-64bit/bin/paraview"
 of.OF_DIR = "/opt/openfoam30"
 
 resourcesPath="/home/wgryglas/Documents/dydaktyka/python_course/resources"
@@ -305,6 +306,10 @@ plt.xlabel("Iteration No")
 plt.ylabel("Objective function")
 plt.grid(True)
 plt.show()
+
+
+# of.runCase(casePath)
+# of.view2(casePath)
 
 
 # of.parview(casePath)
