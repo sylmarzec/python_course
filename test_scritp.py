@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 
 import os
 
-os.listdir()
+#os.listdir()
 
 
 array = [1, 3, 5, 7, 9]
 
 numpyArray = np.array(array)
 
-numpyArray2 = np.sin(array) + np.cos(numpyArray)
+numpyArray2 = np.sin(array)
 
 
 plt.figure()
